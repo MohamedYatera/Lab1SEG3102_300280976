@@ -1,0 +1,23 @@
+<div class="calc-card">
+    <div class="row">
+        <label for="first">First number:</label>
+        <input id="first" #first type="number" inputmode="decimal" />
+    </div>
+
+    <div class="row">
+        <label for="second">Second number:</label>
+        <input id="second" #second type="number" inputmode="decimal" />
+    </div>
+
+    <div class="row">
+        <label for="result">Result:</label>
+        <input id="result" [value]="resultText" readonly />
+    </div>
+
+    <div class="buttons">
+        <button type="button" (click)="operate(first.value,  second.value, '+')">+</button>
+        <button type="button" (click)="operate(first.value,  second.value, '-')">-</button>
+        <button type="button" (click)="operate(first.value,  second.value, '*')">*</button>
+        <button type="button" (click)="operate(first.value,  second.value, '/')">/</button>
+    </div>
+</div>

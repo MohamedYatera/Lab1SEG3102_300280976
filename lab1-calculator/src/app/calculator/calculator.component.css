@@ -1,0 +1,57 @@
+.calc-card {
+    border: 1px solid #9aa9c0;
+    border-radius: 6px;
+    padding: 18px 22px;
+    width: 600px;
+    /* tweak if you want it wider/narrower */
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    /* label | input */
+    align-items: center;
+    gap: 14px;
+    margin: 18px 0;
+}
+
+label {
+    font-size: 18px;
+}
+
+input {
+    padding: 8px 10px;
+    border: 1px solid #aab6c8;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input[readonly] {
+    background: #f7f9fc;
+}
+
+.buttons {
+    display: flex;
+    gap: 48px;
+    margin-top: 16px;
+    padding-left: 180px;
+    /* aligns buttons under inputs like the screenshot */
+}
+
+button {
+    min-width: 56px;
+    padding: 8px 14px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 1px solid #8e8e8e;
+    background: #bfbfbf;
+    /* gray buttons like the mock */
+    cursor: pointer;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: translateY(1px);
+}
